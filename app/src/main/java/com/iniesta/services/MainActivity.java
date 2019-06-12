@@ -24,15 +24,15 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.navigation_bookings:
                     fragment = new MyBookingsFragment();
-//                    getSupportActionBar().setTitle("Search");
+                    getSupportActionBar().setTitle("My Bookings");
                     break;
                 case R.id.navigation_help:
                     fragment = new HelpFragment();
-//                    getSupportActionBar().setTitle("Post");
+                    getSupportActionBar().setTitle("Customer Support");
                     break;
                 case R.id.navigation_profile:
                     fragment = new ProfileFragment();
-//                    getSupportActionBar().setTitle(currentUser.getUsername());
+                    getSupportActionBar().setTitle("My Profile");
                     break;
             }
             return loadFragment(fragment);
