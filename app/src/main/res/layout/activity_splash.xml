@@ -4,24 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey_3"
     tools:context=".Splash">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="165dp"
         android:layout_height="125dp"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/iniesta_logo"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/logomain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="SERVICES"
+        android:text="ServeOnDoor"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/black"
         android:textSize="30sp"
@@ -36,7 +39,7 @@
         android:id="@+id/textView2"
         android:layout_width="395dp"
         android:layout_height="24dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="80dp"
         android:gravity="center_horizontal"
         android:text="Your Home Service Expert "
         android:textSize="20sp"
@@ -51,7 +54,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:text="Quick - Affordable - Trusted"
         android:textColor="@color/blue_grey_500"
         app:layout_constraintEnd_toEndOf="parent"

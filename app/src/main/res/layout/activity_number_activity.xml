@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/grey_3"
     tools:context=".Number_activity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="154dp"
         android:layout_height="106dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="180dp"
         android:layout_marginBottom="7dp"
-        android:src="@drawable/iniesta_logo"
+        android:src="@drawable/logomain"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -24,14 +24,13 @@
         android:id="@+id/cardview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
 
-        android:layout_marginRight="8dp"
+        android:layout_marginRight="20dp"
         android:padding="5dp"
         app:cardCornerRadius="20dp"
-
-        app:cardElevation="5dp"
+        app:cardElevation="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="5dp"
-
+                android:gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="15dp"
@@ -58,7 +57,7 @@
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
                 android:paddingBottom="2dp"
-                android:text="Please Enter Your Contact Number :-"
+                android:text="Enter Your Contact Number :-"
                 android:textColor="@color/blackLight"
                 android:textSize="10sp" />
 
@@ -104,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="SERVICES"
+        android:text="ServeOnDoor"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/black"
         android:textSize="30sp"
