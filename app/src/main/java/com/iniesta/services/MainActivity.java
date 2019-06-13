@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
         if (fragment != null) {
             getSupportFragmentManager()
                     .beginTransaction()
+                    .disallowAddToBackStack()
                     .replace(R.id.fragments_container, fragment)
                     .commit();
 
