@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
-    MaterialSearchView searchView;
+//    MaterialSearchView searchView;
     RecyclerView offersRecyclerView;
     private ArrayList<Integer> imagesList = new ArrayList<>();
 
@@ -40,56 +40,56 @@ public class HomeFragment extends Fragment {
         offersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         offersRecyclerView.setAdapter(recyclerAdapter);
 
-        searchView = (MaterialSearchView) view.findViewById(R.id.search_view);
-        searchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                //Do some magic
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                //Do some magic
-                return false;
-            }
-        });
-
-        searchView.setOnSearchViewListener(new MaterialSearchView.SearchViewListener() {
-            @Override
-            public void onSearchViewShown() {
-                //Do some magic
-            }
-
-            @Override
-            public void onSearchViewClosed() {
-                //Do some magic
-            }
-        });
+//        searchView = (MaterialSearchView) view.findViewById(R.id.search_view);
+//        searchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
+//            @Override
+//            public boolean onQueryTextSubmit(String query) {
+//                //Do some magic
+//                return false;
+//            }
+//
+//            @Override
+//            public boolean onQueryTextChange(String newText) {
+//                //Do some magic
+//                return false;
+//            }
+//        });
+//
+//        searchView.setOnSearchViewListener(new MaterialSearchView.SearchViewListener() {
+//            @Override
+//            public void onSearchViewShown() {
+//                //Do some magic
+//            }
+//
+//            @Override
+//            public void onSearchViewClosed() {
+//                //Do some magic
+//            }
+//        });
 
         return view;
     }
-
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.home_menu, menu);
-
-        MenuItem item = menu.findItem(R.id.action_search);
-        searchView.setMenuItem(item);
-
-    }
+//
+//    @Override
+//    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+//        inflater.inflate(R.menu.home_menu, menu);
+//
+//        MenuItem item = menu.findItem(R.id.action_search);
+//        searchView.setMenuItem(item);
+//
+//    }
 
     public void addImages(){
-        imagesList.add(R.drawable.salonicon);
-        imagesList.add(R.drawable.salonicon);
-        imagesList.add(R.drawable.salonicon);
-        imagesList.add(R.drawable.salonicon);
-        imagesList.add(R.drawable.salonicon);
-        imagesList.add(R.drawable.salonicon);
-        imagesList.add(R.drawable.salonicon);
-        imagesList.add(R.drawable.salonicon);
-        imagesList.add(R.drawable.salonicon);
-        imagesList.add(R.drawable.salonicon);
+        imagesList.add(R.drawable.acrepair);
+        imagesList.add(R.drawable.acrepair);
+        imagesList.add(R.drawable.acrepair);
+        imagesList.add(R.drawable.acrepair);
+        imagesList.add(R.drawable.acrepair);
+        imagesList.add(R.drawable.acrepair);
+        imagesList.add(R.drawable.acrepair);
+        imagesList.add(R.drawable.acrepair);
+        imagesList.add(R.drawable.acrepair);
+        imagesList.add(R.drawable.acrepair);
     }
 
 }
