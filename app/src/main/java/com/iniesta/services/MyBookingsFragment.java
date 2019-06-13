@@ -24,7 +24,6 @@ public class MyBookingsFragment extends Fragment {
     PlaceholderFragment f1;
     PlaceholderFragment f2;
     SectionsPagerAdapter adapter;
-
     View view;
 
 
