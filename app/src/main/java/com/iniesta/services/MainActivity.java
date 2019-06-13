@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     fragment = new HomeFragment();
-//                    getSupportActionBar().setTitle("Snapster");
+                    getSupportActionBar().setTitle("Home");
                     break;
                 case R.id.navigation_bookings:
                     fragment = new MyBookingsFragment();
@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
         if (fragment != null) {
             getSupportFragmentManager()
                     .beginTransaction()
+                    .disallowAddToBackStack()
                     .replace(R.id.fragments_container, fragment)
                     .commit();
 
