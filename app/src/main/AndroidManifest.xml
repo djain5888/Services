@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Number_activity"></activity>
+        <activity android:name=".LocationActivity"></activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".Splash">
             <intent-filter>
