@@ -26,8 +26,6 @@ public class PlaceholderFragment extends Fragment {
         super.onCreate(savedInstanceState);
         try {
             name = getArguments().get("name").toString();
-            Toast.makeText(getContext(), "in on crete"+name, Toast.LENGTH_SHORT).show();
-
         }catch (NullPointerException e){
             e.getMessage();
             Toast.makeText(getContext(),name,Toast.LENGTH_LONG).show();
