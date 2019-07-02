@@ -19,13 +19,17 @@ public class Result extends AppCompatActivity {
     TextView heading1,heading2,heading3,heading4,text1,text2,text3,text4;
     ImageView i1;
     Button b1;
+    String s;
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+
+        getSupportActionBar().hide();
+
         Intent res=getIntent();
-        String s=res.getStringExtra("value");
+         s=res.getStringExtra("value");
         Log.i("sss",s);
         b1=findViewById(R.id.submit);
         heading1=findViewById(R.id.heading1);
@@ -100,5 +104,9 @@ public class Result extends AppCompatActivity {
      public  void  submit(View view)
     {
         Log.i("bu","clic");
+        Intent i1=new Intent(this,FormActivity.class);
+        i1.putExtra("value",s);
+        startActivity(i1);
+
     }
 }

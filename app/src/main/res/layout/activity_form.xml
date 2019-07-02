@@ -29,6 +29,7 @@
                 android:layout_height="wrap_content"
                 android:text="We always do our best to shift your Goods in Professional Manner."
                 android:textSize="25dp"
+                android:id="@+id/heading_form"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:lineSpacingExtra="7dp"
@@ -49,6 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+                    android:id="@+id/heading22"
                     android:text="Tell us Where are you Shifitng"
                     android:textStyle="normal"
                     android:textSize="22dp"
@@ -98,7 +100,8 @@
                 android:hint="Select Service"
                 android:gravity="center"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp" />
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"/>
 
             <Spinner
                 android:id="@+id/categories"
@@ -109,7 +112,8 @@
                 android:hint="Select Service Categories"
                 android:gravity="center"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp" />
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"/>
 
             <EditText
                 android:id="@+id/clientfromlocation"
