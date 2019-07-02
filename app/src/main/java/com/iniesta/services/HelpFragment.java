@@ -23,7 +23,11 @@ CardView c3;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+        //getActivity().getActionBar().show();
+
         View view = inflater.inflate(R.layout.fragment_help,container,false);
+
        c1=view.findViewById(R.id.card1);
        c2=view.findViewById(R.id.card2);
        c3=view.findViewById(R.id.card3);

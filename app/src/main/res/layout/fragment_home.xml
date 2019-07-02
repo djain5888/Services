@@ -62,10 +62,14 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
                         <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/salonicon"
+                            android:layout_width="68dp"
+                            android:layout_height="68dp"
+                            android:src="@drawable/hairdresser"
                             android:layout_gravity="center_horizontal"/>
 
                         <TextView
@@ -93,17 +97,16 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
-
                         <ImageView
                             android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/salonicon"
-                            android:layout_gravity="center_horizontal"/>
+                            android:layout_height="82dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/oil" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Salon"
+                            android:text="Massages"
                             android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
 
@@ -125,16 +128,20 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/salonicon"
+                            android:src="@drawable/cosmetics"
                             android:layout_gravity="center_horizontal"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Salon"
+                            android:text="Beauty and Spa"
                             android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
 
@@ -156,16 +163,20 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/salonicon"
+                            android:src="@drawable/worker"
                             android:layout_gravity="center_horizontal"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Salon"
+                            android:text="Plumber"
                             android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
 
@@ -187,16 +198,20 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/salonicon"
+                            android:src="@drawable/conditioner"
                             android:layout_gravity="center"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Salon"
+                            android:text="AC Repair"
                             android:textColor="@color/black"
                             android:layout_gravity="center"/>
 
@@ -218,10 +233,14 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" />
+
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/salonicon"
+                            android:src="@drawable/heart"
                             android:layout_gravity="center_horizontal"/>
 
                         <TextView
@@ -274,6 +293,7 @@
                                 android:layout_marginTop="10dp"
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
+                                android:layout_marginLeft="5dp"
                                 android:text="Beauty and Spa"
                                 android:textSize="20sp"
                                 android:textColor="@color/black"/>
@@ -284,7 +304,8 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
                                 android:paddingTop="5dp"
-                                android:text="Hair|Beard|Facials|Massage"
+                                android:layout_marginLeft="5dp"
+                                android:text="Hair | Beard | Facials | Massage"
                                 android:textSize="14sp"
                                 android:textColor="@color/green_500"/>
 
@@ -335,7 +356,7 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
                                 android:paddingTop="5dp"
-                                android:text="Packing|Moving"
+                                android:text="Packing | Moving"
                                 android:textSize="14sp"
                                 android:textColor="@color/green_500"/>
 
@@ -385,7 +406,7 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
                                 android:paddingTop="5dp"
-                                android:text="Cabinets|Kitchen|Beds|Sofs"
+                                android:text="Cabinets | Kitchen | Beds | Sofs"
                                 android:textSize="14sp"
                                 android:textColor="@color/green_500"/>
 
@@ -435,7 +456,7 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
                                 android:paddingTop="5dp"
-                                android:text="Home|Offices"
+                                android:text="Home | Offices"
                                 android:textSize="14sp"
                                 android:textColor="@color/green_500"/>
 
@@ -485,7 +506,7 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
                                 android:paddingTop="5dp"
-                                android:text="Window|Split|Central"
+                                android:text="Window | Split | Central"
                                 android:textSize="14sp"
                                 android:textColor="@color/green_500"/>
 

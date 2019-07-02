@@ -50,16 +50,16 @@ public class HomeFragment extends Fragment {
     }
 
     public void addImages(){
-        imagesList.add(R.drawable.acrepair);
-        imagesList.add(R.drawable.acrepair);
-        imagesList.add(R.drawable.acrepair);
-        imagesList.add(R.drawable.acrepair);
-        imagesList.add(R.drawable.acrepair);
-        imagesList.add(R.drawable.acrepair);
-        imagesList.add(R.drawable.acrepair);
-        imagesList.add(R.drawable.acrepair);
-        imagesList.add(R.drawable.acrepair);
-        imagesList.add(R.drawable.acrepair);
+        imagesList.add(R.drawable.beatyaspa);
+        imagesList.add(R.drawable.fitness);
+        imagesList.add(R.drawable.packers);
+        imagesList.add(R.drawable.restaurants);
+        imagesList.add(R.drawable.ac);
+        imagesList.add(R.drawable.dietician);
+        imagesList.add(R.drawable.doctorconsultant);
+        imagesList.add(R.drawable.tutotu);
+        imagesList.add(R.drawable.taxes);
+        imagesList.add(R.drawable.salonat);
     }
 
 }
