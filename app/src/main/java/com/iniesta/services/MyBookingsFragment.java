@@ -37,7 +37,11 @@ public class MyBookingsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+        //getActivity().getActionBar().show();
+
         view = inflater.inflate(R.layout.fragment_mybookings,container,false);
+
         view_pager = view.findViewById(R.id.view_pager1);
         tab_layout = view.findViewById(R.id.tab_layout);
         tab_layout.setupWithViewPager(view_pager);
