@@ -86,7 +86,7 @@ public class Result extends AppCompatActivity {
         }
         if(s.equals("yoga"))
         {
-            i1.setImageResource(R.drawable.heart);
+            i1.setImageResource(R.drawable.fitness);
             heading1.setText("yoga");
             heading2.setText("why fitness from serve on door");
             text1.setText(getString(R.string.yoga_topic1));
