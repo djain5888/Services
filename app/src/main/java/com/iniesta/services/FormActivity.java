@@ -17,7 +17,7 @@ public class FormActivity extends AppCompatActivity {
     private String name,email,phone,tolocation,fromlocation,service,servicescategory,date;
     private EditText mName,mEmail,mphone,mtolocation,mfromlocation,mdate;
     private String[] serviceslist = { "Select Service", "HouseHold Shifting", "Wheelers", "Office Shifting"};
-    private String[] servicecategorieslist = { "Slect Service Categories", "Hello", "Hi", "It's", "Aman", "Here"};
+    private String[] servicecategorieslist = { "Select Service Categories", "Hello", "Hi", "It's", "Aman", "Here"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

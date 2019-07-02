@@ -34,8 +34,8 @@
 </string>
     <string name="carpenter_topic1">Serve on Door, one of the largest Service Provider companies in India, evolved from a small scale business of Iniesta Webtech Solution established in 2019 and functioned for the shifting of household goods, Beauty &amp; Spa, Doctor consultant, Tax services, Repairing (All type), etc. Incepted by vision and hard efforts of Mr. Satyam Shukla, the company moved ahead towards the path of growth. This evolution takes place on the solid grounds of expansion in terms of proficient and customer-satisfactory services. We have followed the principles of growth ever since our inception.</string>
     <string name="topic4">1.)Price may vary according to your requirement or if services varies.\n\n2.)You don\'t need to provide any disposable items like wipes &amp; towels, because they bring along.\n\n3.)Try to choose combo packs to get discounts &amp; profits.\n\n4.)If you have any type of elergy or skin problems, please tell to our professionals before starting the service.\n\n5.)Some of the process(like wax, threading) are painful, our professionals always do their best to decrease the level of pain.\n\n6.)If you want to use your own brand in service, tell us before confirming the appointment\n\n</string>
-<string name="beauty_topic1">Serve on Door, one of the largest Service provider companies in India, evolved from a small scale business of Iniesta Webtech Solution established in 2019 and functioned for the shifting of household goods, Beauty &amp; Spa, Doctor consultant, Tax services, Repairing (All type), etc. Incepted by vision and hard efforts of Mr. Satyam Shukla, the company moved ahead towards the path of growth. This evolution takes place on the solid grounds of expansion in terms of proficient and customer-satisfactory services. We have followed the principles of growth ever since our inception.</string>
-<string name="beauty_topic2">
+    <string name="beauty_topic1">Serve on Door, one of the largest Service provider companies in India, evolved from a small scale business of Iniesta Webtech Solution established in 2019 and functioned for the shifting of household goods, Beauty &amp; Spa, Doctor consultant, Tax services, Repairing (All type), etc. Incepted by vision and hard efforts of Mr. Satyam Shukla, the company moved ahead towards the path of growth. This evolution takes place on the solid grounds of expansion in terms of proficient and customer-satisfactory services. We have followed the principles of growth ever since our inception.</string>
+    <string name="beauty_topic2">
     1)Get Service at your home comfortably.\n\n
     2)Service by professional &amp; Experienced Beautician.\n\n
     3)Fixed price for every type of service(no extra charges).\n\n
@@ -114,8 +114,6 @@
     <string name="yoga_topic2">not done till now</string>
     <string name="yoga_topic3">not done till now</string>
     <string name="yoga_topic4">not done till now</string>
-
-
 
 
 </resources>

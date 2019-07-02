@@ -98,7 +98,8 @@
                 android:hint="Select Service"
                 android:gravity="center"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp" />
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"/>
 
             <Spinner
                 android:id="@+id/categories"
