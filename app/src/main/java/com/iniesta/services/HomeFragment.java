@@ -73,7 +73,7 @@ public class HomeFragment extends Fragment {
         makeup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.putExtra("value","makeup");
+                result.putExtra("value","beauty and spa");
                 startActivity(result);
             }
 
@@ -81,7 +81,7 @@ public class HomeFragment extends Fragment {
         electrician.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.putExtra("value","electrcian");
+                result.putExtra("value","Packers & Movers");
                 startActivity(result);
             }
 
@@ -105,7 +105,7 @@ public class HomeFragment extends Fragment {
         massage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.putExtra("value","massage");
+                result.putExtra("value","carpenter");
                 startActivity(result);
             }
 
