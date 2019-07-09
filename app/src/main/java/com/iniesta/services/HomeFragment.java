@@ -76,7 +76,7 @@ public class HomeFragment extends Fragment implements
         OffersRecyclerAdapter recyclerAdapter = new OffersRecyclerAdapter(getContext(),imagesList);
         offersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         offersRecyclerView.setAdapter(recyclerAdapter);
-       result=new Intent(this.getActivity(),Result.class);
+        result = new Intent(this.getActivity(),Result.class);
         salon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -112,7 +112,7 @@ public class HomeFragment extends Fragment implements
         yoga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.putExtra("value","yoga");
+                result.putExtra("value","healthAndFitness");
                 startActivity(result);
             }
 

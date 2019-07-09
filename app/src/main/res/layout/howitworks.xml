@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/crossd1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/cross1" />
+
+            <TextView
+                android:id="@+id/dialog1h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:text="How It Works"
+                android:textColor="@color/red_500"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/dialog1t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog1h"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:textSize="15sp"
+                android:text="@string/topic3" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</ScrollView>
