@@ -34,6 +34,9 @@ public class HomeFragment extends Fragment implements
     CardView electrician;
     CardView appliance;
     CardView yoga;
+
+    CardView down1,down2,down3,down4,down5,down6;
+
     Intent result;
     int temp=0;
     int a=0;
@@ -71,7 +74,59 @@ public class HomeFragment extends Fragment implements
         appliance=view.findViewById(R.id.appliances);
         yoga=view.findViewById(R.id.yoga);
 
+        down1 = view.findViewById(R.id.Display_card1);
+        down2 = view.findViewById(R.id.Display_card2);
+        down3 = view.findViewById(R.id.Display_card3);
+        down4 = view.findViewById(R.id.Display_card4);
+        down5 = view.findViewById(R.id.Display_card5);
+        down6 = view.findViewById(R.id.Display_card6);
+
         result = new Intent(this.getActivity(),Result.class);
+
+
+        down1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.putExtra("value","homeappliances");
+                startActivity(result);
+            }
+        });
+        down2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.putExtra("value","dietician");
+                startActivity(result);
+            }
+        });
+        down3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.putExtra("value","salon");
+                startActivity(result);
+            }
+        });
+        down4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.putExtra("value","tutor");
+                startActivity(result);
+            }
+        });
+        down5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.putExtra("value","taxes");
+                startActivity(result);
+            }
+        });
+        down6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.putExtra("value","Restaurants");
+                startActivity(result);
+            }
+        });
+
 
         offersRecyclerView = view.findViewById(R.id.offersRecycler);
         OffersRecyclerAdapter.RecyclerViewClickListener listener = new OffersRecyclerAdapter.RecyclerViewClickListener() {
