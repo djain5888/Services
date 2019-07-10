@@ -53,7 +53,7 @@ public class HomeFragment extends Fragment implements
         View view = inflater.inflate(R.layout.fragment_home,container,false);
 
         //Getting the instance of Spinner and applying OnItemSelectedListener on it
-        Spinner spin = (Spinner) view.findViewById(R.id.spinner);
+        Spinner spin = view.findViewById(R.id.spinner);
         spin.setOnItemSelectedListener(this);
 
         searchView = view.findViewById(R.id.search);
@@ -92,15 +92,15 @@ public class HomeFragment extends Fragment implements
                         startActivity(result);
                         break;
                     case 3:
-                        result.putExtra("value","Restaurants");
+                        result.putExtra("value","carpenter");
                         startActivity(result);
                         break;
                     case 4:
-                        result.putExtra("value","appliance");
+                        result.putExtra("value","acRepair");
                         startActivity(result);
                         break;
                     case 5:
-                        result.putExtra("value","dietitian");
+                        result.putExtra("value","dietician");
                         startActivity(result);
                         break;
                     case 6:
@@ -108,29 +108,30 @@ public class HomeFragment extends Fragment implements
                         startActivity(result);
                         break;
                     case 7:
-                        result.putExtra("value","tutor");
+                        result.putExtra("value","Restaurants");
                         startActivity(result);
                         break;
                     case 8:
-                        result.putExtra("value","taxes");
+                        result.putExtra("value","tutor");
                         startActivity(result);
                         break;
                     case 9:
-                        result.putExtra("value","salon");
+                        result.putExtra("value","taxes");
                         startActivity(result);
                         break;
                     case 10:
-                        result.putExtra("value","carpenter");
+                        result.putExtra("value","salon");
                         startActivity(result);
                         break;
                     case 11:
-                        result.putExtra("value","homeappliances");
+                        result.putExtra("value","homeAppliances");
                         startActivity(result);
                         break;
                 }
 
             }
         };
+
         OffersRecyclerAdapter recyclerAdapter = new OffersRecyclerAdapter(getContext(),imagesList,listener);
         offersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         offersRecyclerView.setAdapter(recyclerAdapter);
@@ -207,14 +208,14 @@ public class HomeFragment extends Fragment implements
         imagesList.add(R.drawable.beatyaspa);
         imagesList.add(R.drawable.fitness);
         imagesList.add(R.drawable.packers);
-        imagesList.add(R.drawable.restaurants);
+        imagesList.add(R.drawable.carpenter);
         imagesList.add(R.drawable.ac);
         imagesList.add(R.drawable.dietician);
         imagesList.add(R.drawable.doctorconsultant);
+        imagesList.add(R.drawable.restaurants);
         imagesList.add(R.drawable.tutor);
         imagesList.add(R.drawable.taxes);
         imagesList.add(R.drawable.salonat);
-        imagesList.add(R.drawable.carpenter);
         imagesList.add(R.drawable.homeapp);
     }
 }
