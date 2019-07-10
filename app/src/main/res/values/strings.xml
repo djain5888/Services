@@ -78,11 +78,12 @@
     </string>
     <string name="fitness_topic1">Serve on Door, one of the largest service provider companies in India, evolved from a small scale business of Iniesta Webtech Solution established in 2019 and functioned for the shifting of household goods, Beauty &amp; Spa, Doctor consultant, Tax services, Repairing (All type), etc. Incepted by vision and hard efforts of Mr. Satyam Shukla, the company moved ahead towards the path of growth. This evolution takes place on the solid grounds of expansion in terms of proficient and customer-satisfactory services. We have followed the principles of growth ever since our inception.</string>
     <string name="fitness_topic2">
-        1)Doorstep service\n\n2)Trained to operate in home environment\n\n
-        2)Experienced and verified trainers\n\n
-        3)All trainers rated 4 and above\n\n
-        4)Book a trial session before buying a package Trial sessions available at 99/- only\n\n
-        5)Trial sessions available before purchase\n
+        1)Doorstep service\n\n
+        2)Trained to operate in home environment\n\n
+        3)Experienced and verified trainers\n\n
+        4)All trainers rated 4 and above\n\n
+        5)Book a trial session before buying a package Trial sessions available at 99/- only\n\n
+        6)Trial sessions available before purchase\n
     </string>
     <string name="fitness_topic3">
         1)For whom Male/Female/Couple/Group\n\n
@@ -103,6 +104,45 @@
         \t5. Pick Wisely\n
         For More details Hire Consultant\n
     </string>
-
+    <string name="dietitian_topic1">Serve on Door, one of the largest service provider companies in India, evolved from a small scale business of Iniesta Webtech Solution established in 2019 and functioned for the shifting of household goods, Beauty &amp; Spa, Doctor consultant, Tax services, Repairing (All type), etc. Incepted by vision and hard efforts of Mr. Satyam Shukla, the company moved ahead towards the path of growth. This evolution takes place on the solid grounds of expansion in terms of proficient and customer-satisfactory services. We have followed the principles of growth ever since our inception.</string>
+    <string name="dietitian_topic2">
+        1)Get Online/ Offline Free First Consultation\n\n
+        2)Find nutritionists according to your budget\n\n
+        3)Buy the preferred package if you like the consultation\n\n
+        4)Certified and Verified nutritionists\n\n
+        5)Standard fixed pricing\n
+    </string>
+    <string name="dietitian_topic3">
+        1)First Select what you need Weight loss, weight gain or improving medical conditions\n\n
+        2)Select your preferred type of nutritionist and plan\n\n
+        3)Schedule your FREE Consultation\n\n
+        4)Schedule your Online/ Offline free first consultation\n
+    </string>
+    <string name="dietitian_topic4">
+        1)Take the fit to fit your body according to your witch\n\n
+        2)When and how to make beneficial feet according to health\n\n
+        3)Choose your diet according to the weather, always keep the weight in control\n\n
+        4)Take your sleep according to\n
+    </string>
+    <string name="doctor_topic1">Serve on Door, one of the largest service provider companies in India, evolved from a small scale business of Iniesta Webtech Solution established in 2019 and functioned for the shifting of household goods, Beauty &amp; Spa, Doctor consultant, Tax services, Repairing (All type), etc. Incepted by vision and hard efforts of Mr. Satyam Shukla, the company moved ahead towards the path of growth. This evolution takes place on the solid grounds of expansion in terms of proficient and customer-satisfactory services. We have followed the principles of growth ever since our inception.</string>
+    <string name="doctor_topic2">
+        1)Get service at your home online/offline consultation\n\n
+        2)Find your doctor according your needs\n\n
+        3)Instant service\n\n
+        4)Consultant from certified doctors\n\n
+        5)Guaranteed Customer Satisfaction\n
+    </string>
+    <string name="doctor_topic3">
+        1)Consult your doctor who you need\n\n
+        2)Tell your problem\n\n
+        3)Take your doctors appointment according to your needs\n\n
+        4)And meet at the given time\n
+    </string>
+    <string name="doctor_topic4">
+        1)Do not forget to take medicines without the advice of a doctor, you may have to suffer bad consequences\n\n
+        2)Do not become a doctor yourself\n\n
+        3)Take care medicines, there are lots of harm\n\n
+        4)More caution in case of children\n
+    </string>
 </resources>
 

@@ -117,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:layout_margin="5dp"
-                android:text="How It Works"
+                android:text="How to Book"
                 android:gravity="center"
                 android:textSize="18sp"
                 android:textColor="@color/red_500"/>
@@ -129,7 +129,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/howCard"
+            android:layout_below="@id/howCard"
             android:layout_margin="5dp"
             app:cardElevation="10dp"
             app:cardCornerRadius="20dp">
@@ -137,7 +137,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Attention"
+                android:text="Conditions"
                 android:gravity="center"
                 android:padding="5dp"
                 android:layout_margin="5dp"
@@ -149,15 +149,14 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="click here to book"
+            android:text="Click here to book"
             android:id="@+id/submit"
             android:textStyle="bold"
             android:layout_below="@id/attentionCard"
             android:onClick="submit"
             android:background="@drawable/btn_getstarted_background"
-            android:layout_alignParentRight="true"
-            android:layout_margin="15dp"
-            android:layout_alignParentLeft="true"/>
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp" />
 
     </RelativeLayout>
 

@@ -100,7 +100,7 @@ public class HomeFragment extends Fragment implements
                         startActivity(result);
                         break;
                     case 5:
-                        result.putExtra("value","dietician");
+                        result.putExtra("value","dietitian");
                         startActivity(result);
                         break;
                     case 6:
