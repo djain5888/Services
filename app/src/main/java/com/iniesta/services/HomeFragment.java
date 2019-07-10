@@ -10,7 +10,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -72,11 +71,61 @@ public class HomeFragment extends Fragment implements
         appliance=view.findViewById(R.id.appliances);
         yoga=view.findViewById(R.id.yoga);
 
+        result = new Intent(this.getActivity(),Result.class);
+
         offersRecyclerView = view.findViewById(R.id.offersRecycler);
-        OffersRecyclerAdapter recyclerAdapter = new OffersRecyclerAdapter(getContext(),imagesList);
+        OffersRecyclerAdapter.RecyclerViewClickListener listener = new OffersRecyclerAdapter.RecyclerViewClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+
+                switch(position){
+                    case 0:
+                        result.putExtra("value","beauty and spa");
+                        startActivity(result);
+                        break;
+                    case 1:
+                        result.putExtra("value","healthAndFitness");
+                        startActivity(result);
+                        break;
+                    case 2:
+                        result.putExtra("value","Packers & Movers");
+                        startActivity(result);
+                        break;
+                    case 3:
+                        result.putExtra("value","Restaurants");
+                        startActivity(result);
+                        break;
+                    case 4:
+                        result.putExtra("value","appliance");
+                        startActivity(result);
+                        break;
+                    case 5:
+                        result.putExtra("value","dietician");
+                        startActivity(result);
+                        break;
+                    case 6:
+                        result.putExtra("value","doctor");
+                        startActivity(result);
+                        break;
+                    case 7:
+                        result.putExtra("value","tutor");
+                        startActivity(result);
+                        break;
+                    case 8:
+                        result.putExtra("value","taxes");
+                        startActivity(result);
+                        break;
+                    case 9:
+                        result.putExtra("value","salon");
+                        startActivity(result);
+                        break;
+                }
+
+            }
+        };
+        OffersRecyclerAdapter recyclerAdapter = new OffersRecyclerAdapter(getContext(),imagesList,listener);
         offersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         offersRecyclerView.setAdapter(recyclerAdapter);
-        result = new Intent(this.getActivity(),Result.class);
         salon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -154,7 +203,7 @@ public class HomeFragment extends Fragment implements
         imagesList.add(R.drawable.ac);
         imagesList.add(R.drawable.dietician);
         imagesList.add(R.drawable.doctorconsultant);
-        imagesList.add(R.drawable.tutotu);
+        imagesList.add(R.drawable.tutor);
         imagesList.add(R.drawable.taxes);
         imagesList.add(R.drawable.salonat);
     }
