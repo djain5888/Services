@@ -49,7 +49,7 @@ public class Result extends AppCompatActivity {
         text2 = findViewById(R.id.text2);
         howCard = findViewById(R.id.howCard);
         attentionCard = findViewById(R.id.attentionCard);
-       // text2.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
+        text2.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
         text1.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
         if(s.equals("carpenter"))
         {
@@ -111,6 +111,26 @@ public class Result extends AppCompatActivity {
             text2.setText(getString(R.string.fitness_topic2));
             dialog1Text = getString(R.string.fitness_topic3);
             dialog2Text = getString(R.string.fitness_topic4);
+        }
+        if(s.equals("dietitian"))
+        {
+            i1.setImageResource(R.drawable.dietician);
+            heading1.setText("Dietitian");
+            heading2.setText("Why Dietitian from serve on door");
+            text1.setText(getString(R.string.dietitian_topic1));
+            text2.setText(getString(R.string.dietitian_topic2));
+            dialog1Text = getString(R.string.dietitian_topic3);
+            dialog2Text = getString(R.string.dietitian_topic4);
+        }
+        if(s.equals("doctor"))
+        {
+            i1.setImageResource(R.drawable.doctorconsultant);
+            heading1.setText("Doctor Consultant");
+            heading2.setText("Why Doctor from serve on door");
+            text1.setText(getString(R.string.doctor_topic1));
+            text2.setText(getString(R.string.doctor_topic2));
+            dialog1Text = getString(R.string.doctor_topic3);
+            dialog2Text = getString(R.string.doctor_topic4);
         }
 
         howCard.setOnClickListener(new View.OnClickListener() {
