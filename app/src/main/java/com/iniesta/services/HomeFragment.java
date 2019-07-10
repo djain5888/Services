@@ -28,7 +28,7 @@ public class HomeFragment extends Fragment implements
 
     RecyclerView offersRecyclerView;
     CardView searchView;
-    CardView salon;
+    CardView doctor;
     CardView massage;
     CardView makeup;
     CardView electrician;
@@ -64,7 +64,7 @@ public class HomeFragment extends Fragment implements
                 startActivity(intent);
             }
         });
-        salon=view.findViewById(R.id.salon);
+        doctor=view.findViewById(R.id.doctor);
         massage=view.findViewById(R.id.massage);
         makeup=view.findViewById(R.id.makeup);
         electrician=view.findViewById(R.id.electrician);
@@ -119,6 +119,14 @@ public class HomeFragment extends Fragment implements
                         result.putExtra("value","salon");
                         startActivity(result);
                         break;
+                    case 10:
+                        result.putExtra("value","carpenter");
+                        startActivity(result);
+                        break;
+                    case 11:
+                        result.putExtra("value","homeappliances");
+                        startActivity(result);
+                        break;
                 }
 
             }
@@ -126,10 +134,10 @@ public class HomeFragment extends Fragment implements
         OffersRecyclerAdapter recyclerAdapter = new OffersRecyclerAdapter(getContext(),imagesList,listener);
         offersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         offersRecyclerView.setAdapter(recyclerAdapter);
-        salon.setOnClickListener(new View.OnClickListener() {
+        doctor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.putExtra("value","salon");
+                result.putExtra("value","doctor");
                 startActivity(result);
             }
 
@@ -206,7 +214,7 @@ public class HomeFragment extends Fragment implements
         imagesList.add(R.drawable.tutor);
         imagesList.add(R.drawable.taxes);
         imagesList.add(R.drawable.salonat);
+        imagesList.add(R.drawable.carpenter);
+        imagesList.add(R.drawable.homeapp);
     }
-
-
 }
