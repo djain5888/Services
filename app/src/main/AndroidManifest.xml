@@ -13,7 +13,9 @@
         <activity android:name=".CheckOutActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".Result" />
+        <activity android:name=".AboutUsActivity"/>
         <activity android:name=".Number_activity" />
+        <activity android:name=".Professional"/>
         <activity android:name=".LocationActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Splash">

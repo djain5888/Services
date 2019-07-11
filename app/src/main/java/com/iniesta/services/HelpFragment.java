@@ -62,6 +62,8 @@ public class HelpFragment extends Fragment {
         c4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(getContext(),Professional.class);
+                startActivity(intent);
                 Toast.makeText(getContext(), "card4 Clicked", Toast.LENGTH_SHORT).show();
             }
         });
