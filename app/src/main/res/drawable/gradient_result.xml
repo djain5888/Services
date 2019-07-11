@@ -5,8 +5,10 @@
         android:centerX="9%"
         android:startColor="#FF6254FF"
         android:centerColor="#FF6953FB"
-        android:endColor="#FFFF4ABA"
-        android:angle="45"/>
+        android:endColor="#FFFF4AbA"
+
+
+        android:angle="180"/>
 </shape>
 
 
