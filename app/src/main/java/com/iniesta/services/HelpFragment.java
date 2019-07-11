@@ -1,9 +1,11 @@
 package com.iniesta.services;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,12 +13,14 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 public class HelpFragment extends Fragment {
-CardView c1;
-CardView c2;
-CardView c3;
+    private CardView c1;
+    private CardView c2;
+    private CardView c3,c4;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ((AppCompatActivity)getActivity()).getSupportActionBar().show();
 
     }
 
@@ -31,6 +35,9 @@ CardView c3;
        c1=view.findViewById(R.id.card1);
        c2=view.findViewById(R.id.card2);
        c3=view.findViewById(R.id.card3);
+       c4=view.findViewById(R.id.card4);
+
+
        c1.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
@@ -47,6 +54,14 @@ CardView c3;
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "card 3 clicked ", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getContext(),AboutUsActivity.class);
+                startActivity(intent);
+            }
+        });
+        c4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "card4 Clicked", Toast.LENGTH_SHORT).show();
             }
         });
 
