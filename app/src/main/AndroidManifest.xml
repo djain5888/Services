@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AboutUsActivity"></activity>
-        <activity android:name=".FormActivity" />
+        <activity android:name=".FormActivity"></activity>
         <activity android:name=".CheckOutActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".Result" />

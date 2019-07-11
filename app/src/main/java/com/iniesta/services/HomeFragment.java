@@ -10,7 +10,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,12 +28,15 @@ public class HomeFragment extends Fragment implements
 
     RecyclerView offersRecyclerView;
     CardView searchView;
-    CardView salon;
+    CardView doctor;
     CardView massage;
     CardView makeup;
     CardView electrician;
     CardView appliance;
     CardView yoga;
+
+    CardView down1,down2,down3,down4,down5,down6;
+
     Intent result;
     int temp=0;
     int a=0;
@@ -54,7 +56,7 @@ public class HomeFragment extends Fragment implements
         View view = inflater.inflate(R.layout.fragment_home,container,false);
 
         //Getting the instance of Spinner and applying OnItemSelectedListener on it
-        Spinner spin = (Spinner) view.findViewById(R.id.spinner);
+        Spinner spin = view.findViewById(R.id.spinner);
         spin.setOnItemSelectedListener(this);
 
         searchView = view.findViewById(R.id.search);
@@ -65,22 +67,133 @@ public class HomeFragment extends Fragment implements
                 startActivity(intent);
             }
         });
-        salon=view.findViewById(R.id.salon);
+        doctor=view.findViewById(R.id.doctor);
         massage=view.findViewById(R.id.massage);
         makeup=view.findViewById(R.id.makeup);
         electrician=view.findViewById(R.id.electrician);
         appliance=view.findViewById(R.id.appliances);
         yoga=view.findViewById(R.id.yoga);
 
-        offersRecyclerView = view.findViewById(R.id.offersRecycler);
-        OffersRecyclerAdapter recyclerAdapter = new OffersRecyclerAdapter(getContext(),imagesList);
-        offersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
-        offersRecyclerView.setAdapter(recyclerAdapter);
-       result=new Intent(this.getActivity(),Result.class);
-        salon.setOnClickListener(new View.OnClickListener() {
+        down1 = view.findViewById(R.id.Display_card1);
+        down2 = view.findViewById(R.id.Display_card2);
+        down3 = view.findViewById(R.id.Display_card3);
+        down4 = view.findViewById(R.id.Display_card4);
+        down5 = view.findViewById(R.id.Display_card5);
+        down6 = view.findViewById(R.id.Display_card6);
+
+        result = new Intent(this.getActivity(),Result.class);
+
+
+        down1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.putExtra("value","homeappliances");
+                startActivity(result);
+            }
+        });
+        down2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.putExtra("value","dietician");
+                startActivity(result);
+            }
+        });
+        down3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 result.putExtra("value","salon");
+                startActivity(result);
+            }
+        });
+        down4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.putExtra("value","tutor");
+                startActivity(result);
+            }
+        });
+        down5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.putExtra("value","taxes");
+                startActivity(result);
+            }
+        });
+        down6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.putExtra("value","Restaurants");
+                startActivity(result);
+            }
+        });
+
+
+        offersRecyclerView = view.findViewById(R.id.offersRecycler);
+        OffersRecyclerAdapter.RecyclerViewClickListener listener = new OffersRecyclerAdapter.RecyclerViewClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+
+                switch(position){
+                    case 0:
+                        result.putExtra("value","beauty and spa");
+                        startActivity(result);
+                        break;
+                    case 1:
+                        result.putExtra("value","healthAndFitness");
+                        startActivity(result);
+                        break;
+                    case 2:
+                        result.putExtra("value","Packers & Movers");
+                        startActivity(result);
+                        break;
+                    case 3:
+                        result.putExtra("value","carpenter");
+                        startActivity(result);
+                        break;
+                    case 4:
+                        result.putExtra("value","acRepair");
+                        startActivity(result);
+                        break;
+                    case 5:
+                        result.putExtra("value","dietician");
+                        startActivity(result);
+                        break;
+                    case 6:
+                        result.putExtra("value","doctor");
+                        startActivity(result);
+                        break;
+                    case 7:
+                        result.putExtra("value","Restaurants");
+                        startActivity(result);
+                        break;
+                    case 8:
+                        result.putExtra("value","tutor");
+                        startActivity(result);
+                        break;
+                    case 9:
+                        result.putExtra("value","taxes");
+                        startActivity(result);
+                        break;
+                    case 10:
+                        result.putExtra("value","salon");
+                        startActivity(result);
+                        break;
+                    case 11:
+                        result.putExtra("value","homeAppliances");
+                        startActivity(result);
+                        break;
+                }
+
+            }
+        };
+
+        OffersRecyclerAdapter recyclerAdapter = new OffersRecyclerAdapter(getContext(),imagesList,listener);
+        offersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        offersRecyclerView.setAdapter(recyclerAdapter);
+        doctor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                result.putExtra("value","doctor");
                 startActivity(result);
             }
 
@@ -112,7 +225,7 @@ public class HomeFragment extends Fragment implements
         yoga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.putExtra("value","yoga");
+                result.putExtra("value","healthAndFitness");
                 startActivity(result);
             }
 
@@ -150,14 +263,14 @@ public class HomeFragment extends Fragment implements
         imagesList.add(R.drawable.beatyaspa);
         imagesList.add(R.drawable.fitness);
         imagesList.add(R.drawable.packers);
-        imagesList.add(R.drawable.restaurants);
+        imagesList.add(R.drawable.carpenter);
         imagesList.add(R.drawable.ac);
         imagesList.add(R.drawable.dietician);
         imagesList.add(R.drawable.doctorconsultant);
-        imagesList.add(R.drawable.tutotu);
+        imagesList.add(R.drawable.restaurants);
+        imagesList.add(R.drawable.tutor);
         imagesList.add(R.drawable.taxes);
         imagesList.add(R.drawable.salonat);
+        imagesList.add(R.drawable.homeapp);
     }
-
-
 }

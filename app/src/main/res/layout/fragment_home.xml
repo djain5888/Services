@@ -78,7 +78,7 @@
                 <android.support.v7.widget.CardView
                     android:layout_height="100dp"
                     android:layout_width="0dp"
-                    android:id="@+id/salon"
+                    android:id="@+id/makeup"
                     android:layout_row="0"
                     android:layout_column="0"
                     android:layout_columnWeight="1"
@@ -95,15 +95,15 @@
                             android:layout_height="5dp" />
 
                         <ImageView
-                            android:layout_width="68dp"
-                            android:layout_height="68dp"
-                            android:src="@drawable/hairdresser"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/cosmetics"
                             android:layout_gravity="center_horizontal"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Salon at home"
+                            android:text="Beauty and Spa"
                             android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
 
@@ -145,7 +145,7 @@
 
                 <android.support.v7.widget.CardView
                     android:layout_height="100dp"
-                    android:id="@+id/makeup"
+                    android:id="@+id/doctor"
                     android:layout_width="0dp"
                     android:layout_row="0"
                     android:layout_column="2"
@@ -165,13 +165,13 @@
                         <ImageView
                             android:layout_width="70dp"
                             android:layout_height="70dp"
-                            android:src="@drawable/cosmetics"
+                            android:src="@drawable/doctor"
                             android:layout_gravity="center_horizontal"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Beauty and Spa"
+                            android:text="Consult Doctor"
                             android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
 
@@ -207,7 +207,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Packers / Movers"
+                            android:text="Packers"
                             android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
 
@@ -301,10 +301,12 @@
                 android:layout_below="@id/offersRecycler"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/linear"
                 android:orientation="vertical">
 
                 <android.support.v7.widget.CardView
                     android:layout_height="100dp"
+                    android:id="@+id/Display_card1"
                     android:layout_width="match_parent"
                     android:backgroundTint="@color/white"
                     android:layout_margin="2dp">
@@ -327,7 +329,7 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
                                 android:layout_marginLeft="5dp"
-                                android:text="Beauty and Spa"
+                                android:text="Home Appliances"
                                 android:textSize="20sp"
                                 android:textColor="@color/black"/>
 
@@ -338,7 +340,7 @@
                                 android:layout_marginEnd="5dp"
                                 android:paddingTop="5dp"
                                 android:layout_marginLeft="5dp"
-                                android:text="Hair | Beard | Facials | Massage"
+                                android:text="AC | Fan | Refrigerator and More"
                                 android:textSize="14sp"
                                 android:textColor="@color/green_500"/>
 
@@ -350,7 +352,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1.5"
                             android:scaleType="fitXY"
-                            android:src="@drawable/spa"/>
+                            android:src="@drawable/appliances1"/>
 
                     </LinearLayout>
 
@@ -360,6 +362,7 @@
                     android:layout_height="100dp"
                     android:layout_width="match_parent"
                     android:backgroundTint="@color/white"
+                    android:id="@+id/Display_card2"
                     android:layout_margin="2dp">
 
                     <LinearLayout
@@ -379,7 +382,7 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginEnd="5dp"
-                                android:text="Packers and Movers"
+                                android:text="Dietician"
                                 android:textColor="@color/black"
                                 android:textSize="20sp" />
 
@@ -389,7 +392,7 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
                                 android:paddingTop="5dp"
-                                android:text="Packing | Moving"
+                                android:text="Consult on diet and nutrition."
                                 android:textColor="@color/green_500"
                                 android:textSize="14sp" />
 
@@ -400,7 +403,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="10dp"
                             android:layout_weight="1.5"
-                            android:src="@drawable/pckmov" />
+                            android:src="@drawable/dietitian" />
 
                     </LinearLayout>
 
@@ -409,6 +412,7 @@
                 <android.support.v7.widget.CardView
                     android:layout_height="100dp"
                     android:layout_width="match_parent"
+                    android:id="@+id/Display_card3"
                     android:backgroundTint="@color/white"
                     android:layout_margin="2dp">
 
@@ -429,7 +433,7 @@
                                 android:layout_marginTop="10dp"
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
-                                android:text="Carpenter"
+                                android:text="Salon At Home"
                                 android:textSize="20sp"
                                 android:textColor="@color/black"/>
 
@@ -439,7 +443,7 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
                                 android:paddingTop="5dp"
-                                android:text="Cabinets | Kitchen | Beds | Sofs"
+                                android:text="Hair | Beard | Shaving | Waxing"
                                 android:textSize="14sp"
                                 android:textColor="@color/green_500"/>
 
@@ -450,7 +454,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1.5"
-                            android:src="@drawable/carpenter"/>
+                            android:src="@drawable/salonhome"/>
 
                     </LinearLayout>
 
@@ -459,6 +463,7 @@
                 <android.support.v7.widget.CardView
                     android:layout_height="100dp"
                     android:layout_width="match_parent"
+                    android:id="@+id/Display_card4"
                     android:backgroundTint="@color/white"
                     android:layout_margin="2dp">
 
@@ -479,7 +484,7 @@
                                 android:layout_marginTop="10dp"
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
-                                android:text="Pest Control"
+                                android:text="Academic Tutor"
                                 android:textSize="20sp"
                                 android:textColor="@color/black"/>
 
@@ -489,7 +494,7 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
                                 android:paddingTop="5dp"
-                                android:text="Home | Offices"
+                                android:text="Learning at your Door"
                                 android:textSize="14sp"
                                 android:textColor="@color/green_500"/>
 
@@ -500,7 +505,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1.5"
-                            android:src="@drawable/pest"/>
+                            android:src="@drawable/academictutor"/>
 
                     </LinearLayout>
 
@@ -510,6 +515,7 @@
                     android:layout_height="100dp"
                     android:layout_width="match_parent"
                     android:backgroundTint="@color/white"
+                    android:id="@+id/Display_card5"
                     android:layout_margin="2dp">
 
                     <LinearLayout
@@ -529,7 +535,7 @@
                                 android:layout_marginTop="10dp"
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
-                                android:text="Air Conditioner Repair"
+                                android:text="Business and Taxes"
                                 android:textSize="20sp"
                                 android:textColor="@color/black"/>
 
@@ -539,7 +545,7 @@
                                 android:layout_marginStart="5dp"
                                 android:layout_marginEnd="5dp"
                                 android:paddingTop="5dp"
-                                android:text="Window | Split | Central"
+                                android:text="Consult Our Top Rated Expertise"
                                 android:textSize="14sp"
                                 android:textColor="@color/green_500"/>
 
@@ -550,7 +556,59 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1.5"
-                            android:src="@drawable/acrepair"/>
+                            android:src="@drawable/ca"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_height="100dp"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:id="@+id/Display_card6"
+                    android:layout_margin="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:text="Restaurants"
+                                android:textSize="20sp"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:paddingTop="5dp"
+                                android:text="Take Out From Top-In-Class"
+                                android:textSize="14sp"
+                                android:textColor="@color/green_500"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_margin="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:src="@drawable/res"
+                            android:scaleType="fitXY"/>
 
                     </LinearLayout>
 
