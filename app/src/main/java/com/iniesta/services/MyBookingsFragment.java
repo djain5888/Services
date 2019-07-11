@@ -35,6 +35,9 @@ public class MyBookingsFragment extends Fragment {
         super.onCreate(savedInstanceState);
         Toast.makeText(getContext(), "hello", Toast.LENGTH_SHORT).show();
         ((AppCompatActivity) getActivity()).getSupportActionBar().show();
+
+        ((AppCompatActivity)getActivity()).getSupportActionBar().show();
+
     }
     @Nullable
     @Override

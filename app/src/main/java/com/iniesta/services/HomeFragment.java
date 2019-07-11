@@ -24,23 +24,13 @@ import java.util.ArrayList;
 public class HomeFragment extends Fragment implements
         AdapterView.OnItemSelectedListener  {
 
-    String[] country = { "India", "USA", "China", "Japan", "Other"};
+    private String[] country = { "India", "USA", "China", "Japan", "Other"};
+    private ArrayList<Integer> imagesList = new ArrayList<>();
 
     RecyclerView offersRecyclerView;
-    CardView searchView;
-    CardView doctor;
-    CardView massage;
-    CardView makeup;
-    CardView electrician;
-    CardView appliance;
-    CardView yoga;
-
+    CardView searchView,doctor,massage,makeup,electrician,appliance,fitness;
     CardView down1,down2,down3,down4,down5,down6;
-
     Intent result;
-    int temp=0;
-    int a=0;
-    private ArrayList<Integer> imagesList = new ArrayList<>();
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -56,7 +46,7 @@ public class HomeFragment extends Fragment implements
         View view = inflater.inflate(R.layout.fragment_home,container,false);
 
         //Getting the instance of Spinner and applying OnItemSelectedListener on it
-        Spinner spin = (Spinner) view.findViewById(R.id.spinner);
+        Spinner spin = view.findViewById(R.id.spinner);
         spin.setOnItemSelectedListener(this);
 
         searchView = view.findViewById(R.id.search);
@@ -67,12 +57,12 @@ public class HomeFragment extends Fragment implements
                 startActivity(intent);
             }
         });
-        doctor=view.findViewById(R.id.doctor);
-        massage=view.findViewById(R.id.massage);
-        makeup=view.findViewById(R.id.makeup);
-        electrician=view.findViewById(R.id.electrician);
-        appliance=view.findViewById(R.id.appliances);
-        yoga=view.findViewById(R.id.yoga);
+        doctor = view.findViewById(R.id.doctor);
+        massage = view.findViewById(R.id.massage);
+        makeup = view.findViewById(R.id.makeup);
+        electrician = view.findViewById(R.id.electrician);
+        appliance = view.findViewById(R.id.appliances);
+        fitness = view.findViewById(R.id.fitness);
 
         down1 = view.findViewById(R.id.Display_card1);
         down2 = view.findViewById(R.id.Display_card2);
@@ -83,11 +73,10 @@ public class HomeFragment extends Fragment implements
 
         result = new Intent(this.getActivity(),Result.class);
 
-
         down1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.putExtra("value","homeappliances");
+                result.putExtra("value","homeAppliances");
                 startActivity(result);
             }
         });
@@ -122,7 +111,7 @@ public class HomeFragment extends Fragment implements
         down6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.putExtra("value","Restaurants");
+                result.putExtra("value","restaurants");
                 startActivity(result);
             }
         });
@@ -135,23 +124,23 @@ public class HomeFragment extends Fragment implements
 
                 switch(position){
                     case 0:
-                        result.putExtra("value","beauty and spa");
+                        result.putExtra("value","beauty&spa");
                         startActivity(result);
                         break;
                     case 1:
-                        result.putExtra("value","healthAndFitness");
+                        result.putExtra("value","health&Fitness");
                         startActivity(result);
                         break;
                     case 2:
-                        result.putExtra("value","Packers & Movers");
+                        result.putExtra("value","packers&movers");
                         startActivity(result);
                         break;
                     case 3:
-                        result.putExtra("value","Restaurants");
+                        result.putExtra("value","carpenter");
                         startActivity(result);
                         break;
                     case 4:
-                        result.putExtra("value","appliance");
+                        result.putExtra("value","acRepair");
                         startActivity(result);
                         break;
                     case 5:
@@ -163,29 +152,30 @@ public class HomeFragment extends Fragment implements
                         startActivity(result);
                         break;
                     case 7:
-                        result.putExtra("value","tutor");
+                        result.putExtra("value","restaurants");
                         startActivity(result);
                         break;
                     case 8:
-                        result.putExtra("value","taxes");
+                        result.putExtra("value","tutor");
                         startActivity(result);
                         break;
                     case 9:
-                        result.putExtra("value","salon");
+                        result.putExtra("value","taxes");
                         startActivity(result);
                         break;
                     case 10:
-                        result.putExtra("value","carpenter");
+                        result.putExtra("value","salon");
                         startActivity(result);
                         break;
                     case 11:
-                        result.putExtra("value","homeappliances");
+                        result.putExtra("value","homeAppliances");
                         startActivity(result);
                         break;
                 }
 
             }
         };
+
         OffersRecyclerAdapter recyclerAdapter = new OffersRecyclerAdapter(getContext(),imagesList,listener);
         offersRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         offersRecyclerView.setAdapter(recyclerAdapter);
@@ -200,7 +190,7 @@ public class HomeFragment extends Fragment implements
         makeup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.putExtra("value","beauty and spa");
+                result.putExtra("value","beauty&spa");
                 startActivity(result);
             }
 
@@ -208,7 +198,7 @@ public class HomeFragment extends Fragment implements
         electrician.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.putExtra("value","Packers & Movers");
+                result.putExtra("value","packers&movers");
                 startActivity(result);
             }
 
@@ -221,10 +211,10 @@ public class HomeFragment extends Fragment implements
             }
 
         });
-        yoga.setOnClickListener(new View.OnClickListener() {
+        fitness.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.putExtra("value","healthAndFitness");
+                result.putExtra("value","health&Fitness");
                 startActivity(result);
             }
 
@@ -262,14 +252,14 @@ public class HomeFragment extends Fragment implements
         imagesList.add(R.drawable.beatyaspa);
         imagesList.add(R.drawable.fitness);
         imagesList.add(R.drawable.packers);
-        imagesList.add(R.drawable.restaurants);
+        imagesList.add(R.drawable.carpenter);
         imagesList.add(R.drawable.ac);
         imagesList.add(R.drawable.dietician);
         imagesList.add(R.drawable.doctorconsultant);
+        imagesList.add(R.drawable.restaurants);
         imagesList.add(R.drawable.tutor);
         imagesList.add(R.drawable.taxes);
         imagesList.add(R.drawable.salonat);
-        imagesList.add(R.drawable.carpenter);
         imagesList.add(R.drawable.homeapp);
     }
 }
