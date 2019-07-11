@@ -18,6 +18,8 @@
         <activity android:name=".Professional"/>
         <activity android:name=".LocationActivity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".AboutUsActivity"/>
+        <activity android:name=".Professional"/>
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
