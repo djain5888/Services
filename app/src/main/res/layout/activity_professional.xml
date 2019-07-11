@@ -127,6 +127,7 @@
             android:layout_gravity="center"
             android:layout_margin="12dp"
             android:background="@drawable/gradient_result"
+            android:id="@+id/submit_button"
 
             android:text="SUBMIT"
             android:textColor="@color/white"
