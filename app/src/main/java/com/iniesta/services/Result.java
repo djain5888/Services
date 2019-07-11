@@ -63,7 +63,7 @@ public class Result extends AppCompatActivity {
                 dialog1Text = getString(R.string.beauty_topic3);
                 dialog2Text = getString(R.string.beauty_topic4);
                 break;
-            case "healthAndFitness":
+            case "health&Fitness":
                 mainImage.setImageResource(R.drawable.fitness);
                 heading1.setText("Health and Fitness");
                 heading2.setText("Why Health and Fitness from serve on door");
@@ -72,7 +72,7 @@ public class Result extends AppCompatActivity {
                 dialog1Text = getString(R.string.fitness_topic3);
                 dialog2Text = getString(R.string.fitness_topic4);
                 break;
-            case "Packers & Movers":
+            case "packers&movers":
                 mainImage.setImageResource(R.drawable.packers);
                 heading1.setText("Packers & Movers");
                 heading2.setText("Why Packer & Movers from Serve on Door");
@@ -81,7 +81,7 @@ public class Result extends AppCompatActivity {
                 dialog1Text = getString(R.string.packages_topic3);
                 dialog2Text = getString(R.string.packages_topic4);
                 break;
-            case "Restaurants":
+            case "restaurants":
                 mainImage.setImageResource(R.drawable.restaurants);
                 heading1.setText("Restaurants");
                 heading2.setText("Why Restaurants from serve on door");
