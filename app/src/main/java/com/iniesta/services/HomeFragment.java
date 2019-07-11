@@ -28,7 +28,7 @@ public class HomeFragment extends Fragment implements
     private ArrayList<Integer> imagesList = new ArrayList<>();
 
     RecyclerView offersRecyclerView;
-    CardView searchView,doctor,massage,makeup,electrician,appliance,fitness;
+    CardView searchView,doctor,carpenter,makeup,electrician,appliance,fitness;
     CardView down1,down2,down3,down4,down5,down6;
     Intent result;
 
@@ -58,7 +58,7 @@ public class HomeFragment extends Fragment implements
             }
         });
         doctor = view.findViewById(R.id.doctor);
-        massage = view.findViewById(R.id.massage);
+        carpenter = view.findViewById(R.id.carpenter);
         makeup = view.findViewById(R.id.makeup);
         electrician = view.findViewById(R.id.electrician);
         appliance = view.findViewById(R.id.appliances);
@@ -206,7 +206,7 @@ public class HomeFragment extends Fragment implements
         appliance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.putExtra("value","appliance");
+                result.putExtra("value","acRepair");
                 startActivity(result);
             }
 
@@ -219,7 +219,7 @@ public class HomeFragment extends Fragment implements
             }
 
         });
-        massage.setOnClickListener(new View.OnClickListener() {
+        carpenter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 result.putExtra("value","carpenter");
