@@ -24,7 +24,7 @@ import java.util.ArrayList;
 public class HomeFragment extends Fragment implements
         AdapterView.OnItemSelectedListener  {
 
-    private String[] country = { "India", "USA", "China", "Japan", "Other"};
+    private String[] places = { "Noida", "Delhi", "Ghaziabad", "Faridabad", "Gurgaon","Other"};
     private ArrayList<Integer> imagesList = new ArrayList<>();
 
     RecyclerView offersRecyclerView;
@@ -229,7 +229,7 @@ public class HomeFragment extends Fragment implements
         });
 
         //Creating the ArrayAdapter instance having the country list
-        ArrayAdapter aa = new ArrayAdapter(this.getActivity(),android.R.layout.simple_spinner_item,country);
+        ArrayAdapter aa = new ArrayAdapter(this.getActivity(),android.R.layout.simple_spinner_item,places);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         //Setting the ArrayAdapter data on the Spinner
         spin.setAdapter(aa);
@@ -241,7 +241,7 @@ public class HomeFragment extends Fragment implements
     @Override
     public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id) {
         ((TextView) arg1).setTextColor(Color.WHITE);
-        Toast.makeText(getContext(),country[position] , Toast.LENGTH_LONG).show();
+        Toast.makeText(getContext(),places[position] , Toast.LENGTH_LONG).show();
     }
     @Override
     public void onNothingSelected(AdapterView<?> arg0) {

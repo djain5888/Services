@@ -132,7 +132,7 @@
 
                 <TextView
                     android:id="@+id/text4"
-                    android:layout_toLeftOf="@+id/img4"
+                    android:layout_toLeftOf="@id/img4"
                     android:layout_width="294dp"
                     android:layout_alignParentLeft="true"
                     android:text="Became a Professional Partner"

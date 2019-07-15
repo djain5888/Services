@@ -2,7 +2,7 @@
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey_400"
+    android:background="@color/grayDark"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
@@ -146,13 +146,60 @@
 
         </android.support.v7.widget.CardView>
 
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ratingCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/attentionCard"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/userRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/green_600"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:text="Ratings and Reviews"/>
+
+                <android.support.v7.widget.AppCompatRatingBar
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/userRating"
+                    android:numStars="5"
+                    android:rating="4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="4.1 Average based on 271 reviews"
+                    android:layout_below="@id/ratingBar"/>
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Click here to book"
             android:id="@+id/submit"
             android:textStyle="bold"
-            android:layout_below="@id/attentionCard"
+            android:layout_below="@id/ratingCard"
             android:onClick="submit"
             android:background="@drawable/btn_getstarted_background"
             android:layout_centerHorizontal="true"

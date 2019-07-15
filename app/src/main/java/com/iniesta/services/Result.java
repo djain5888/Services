@@ -128,8 +128,8 @@ public class Result extends AppCompatActivity {
                 break;
             case "taxes":
                 mainImage.setImageResource(R.drawable.taxes);
-                heading1.setText("Taxes and Business");
-                heading2.setText("Why Taxes and Business from serve on door");
+                heading1.setText("Business and Taxes");
+                heading2.setText("Why Business and Taxes from serve on door");
                 text1.setText(getString(R.string.doctor_topic1));
                 text2.setText(getString(R.string.doctor_topic2));
                 dialog1Text = getString(R.string.doctor_topic3);
@@ -208,6 +208,8 @@ public class Result extends AppCompatActivity {
                 dialog.show();
             }
         });
+
+
 
     }
      public  void  submit(View view)
